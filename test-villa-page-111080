@@ -1,1 +1,19 @@
 hello villa
+<script language="JavaScript">
+
+
+
+var str = "1233565";
+var patt = new RegExp("e");
+var res = patt.test(str);
+//document.write(str);
+
+  var lastValue = undefined;
+  var urlPath = document.location.pathname;
+  var pathSplit = urlPath.split('/');
+  var lastElement = pathSplit[pathSplit.length - 1];
+  var lastElementSplit = lastElement.split('-');
+  lastValue = lastElementSplit[lastElementSplit.length - 1];
+
+document.write(lastValue);
+</script>
